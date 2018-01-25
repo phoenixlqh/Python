@@ -10,7 +10,7 @@ For manual testing run:
 python bubble_sort.py
 """
 
-from __future__ import print_function
+from __future__ import print_function   #__future__ is the use in Python2.7
 
 
 def bubble_sort(collection):
@@ -31,7 +31,7 @@ def bubble_sort(collection):
     [-45, -5, -2]
     """
     length = len(collection)
-    for i in range(length-1, -1, -1):#range(length-1, -1, -1)
+    for i in range(length-1, -1, -1):#range(length-1, -1, -1)     # why is the turn reversed? direction of bubbles movement?
         for j in range(i):#range(1, i)
             if collection[j] > collection[j+1]:
                 collection[j], collection[j+1] = collection[j+1], collection[j]
